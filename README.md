@@ -2,7 +2,7 @@
 
 # Installation
 
-The experiments are conducted using the EPyMARL framework. Please follow the instructions in [SMAC](https://github.com/oxwhirl/smac) and [EPyMARL](https://github.com/uoe-agents/epymarl) to install StarCraft-II, SMAC, MPE, LBF, and EPyMARL.
+The experiments are conducted using the EPyMARL framework. Please follow the instructions in [SMAC](https://github.com/oxwhirl/smac) and [EPyMARL](https://github.com/uoe-agents/epymarl) to install StarCraft-II, SMAC, MPE, and LBF.
 
 # Running Experiments
 
@@ -36,7 +36,7 @@ python main.py --config=maa2c --env-config=gymma with env_args.time_limit=20 env
 * [Model Address] is the address of the attack model in “src/Trained Models/DAA”
 
 ## Some Notes:
-* The default config file is located in “src/config”. For the OBS attacks, set “attack_type” to “OA”, and set the DAA model to the corresponding DAA file with 𝝀=0 using “adv_load_adr”. (Note that “OA” runs slowly)
+* The default config file is located in “src/config”. For the OBS attacks, set “attack_type” to “OA”, and set the DAA model to the corresponding DAA file with 𝝀=0 using `adv_load_adr`. (Note that “OA” runs slowly)
 * To run an experiment without attack, set `attack_active=False`
 * To train a new tracker model, set `attack_active=False` and `tracker_train=True`
 * To train a new DAA (dynamic adversary) model for 𝝀=[𝑎,𝑏,𝑐,𝑑], set `adv_test_mode=False` and `lambda_DAA=[a,b,c,d]`
