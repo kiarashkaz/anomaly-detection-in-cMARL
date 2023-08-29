@@ -41,3 +41,5 @@ python main.py --config=maa2c --env-config=gymma with env_args.time_limit=20 env
 * To train a new tracker model, set `attack_active=False` and `tracker_train=True`
 * To train a new DAA (dynamic adversary) model for 𝝀=[𝑎,𝑏,𝑐,𝑑], set `adv_test_mode=False` and `lambda_DAA=[a,b,c,d]`
 
+# Reference
+Kiarash Kazari, Ezzeldin Shereen, György Dán. "Decentralized Anomaly Detection in Cooperative Multi-Agent Reinforcement Learning". In Proceedings of IJCAI, Aug. 2023
